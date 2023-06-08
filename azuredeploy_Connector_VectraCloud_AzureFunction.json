@@ -246,7 +246,7 @@
                         "AuditsSchedule": "[parameters('AuditsSchedule')]",
                         "EntityScoringSchedule": "[parameters('EntityScoringSchedule')]",
                         "LockdownSchedule": "[parameters('LockdownSchedule')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinel-VectraCloudAPI-functionapp"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/harshcds1212/vectra/blob/main/Vectra.zip?raw=true"
                     }
                 }
             ]
