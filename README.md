@@ -6,7 +6,7 @@
 
 ## Introduction<a name="Introduction"></a>
 
-This folder contains the Azure function time trigger code for Vectra Data Connector. The connector will run periodically and ingest the Vectra data into the Microsoft Sentinel logs custom tables.
+This folder contains the Azure function time trigger code for Vectra XDR Data Connector. The connector will run periodically and ingest the Vectra XDR data into the Microsoft Sentinel logs custom tables.
 ## Folders<a name="Folders"></a>
 
 1. `VectraDataConnector/` - This contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies.
@@ -32,7 +32,7 @@ After the solution is published, we can find the connector in the connector gall
 
 i. Go to Microsoft Sentinel -> Data Connectors
 
-ii. Click on the Vectra Data Connector, and the connector page will open.
+ii. Click on the Vectra XDR Data Connector, and the connector page will open.
 
 iii. Click on the blue `Deploy to Azure` button.
 
@@ -46,10 +46,14 @@ Workspace Key  | None
 Vectra Base URL  | None
 Vectra Client Id - Health  | None
 Vectra Client Secret Key - Health  | None
-Vectra Client Id - Entity Scoring and Detections  | None
-Vectra Client Secret Key - Entity Scoring and Detections  | None
-Vectra Client Id- Audit and Lockdown  | None
-Vectra Client Secret Key- Audit and Lockdown  | None
+Vectra Client Id - Entity Scoring  | None
+Vectra Client Secret Key - Entity Scoring  | None
+Vectra Client Id - Detections  | None
+Vectra Client Secret Key - Detections  | None
+Vectra Client Id - Audits  | None
+Vectra Client Secret Key - Audits  | None
+Vectra Client Id - Lockdown  | None
+Vectra Client Secret Key - Lockdown  | None
 Start Time  | None(Last 24 Hour)
 Audits Table Name  | Audits_Data
 Detections Table Name | Detections_Data
@@ -63,7 +67,7 @@ Detections Schedule  | 0 2/10 * * * *
 Audits Schedule  | 0 5/10 * * * *
 Entity Scoring Schedule  | 0 8/10 * * * *
 
-The connector should start ingesting the data into the tables at every time interval specified in the Schedules during configuration.
+The connector should start ingesting the Vectra XDR data into the tables at every time interval specified in the Schedules during configuration.
 
 
 ## Installing for testing<a name="Installing-for-testing"></a>
