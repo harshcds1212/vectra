@@ -1,5 +1,5 @@
 {
-    "id": "VectraCloud",
+    "id": "VectraCloudasdf",
     "title": "Vectra Cloud",
     "publisher": "Vectra",
     "descriptionMarkdown": "The [Vectra](https://www.vectra.ai/) connector gives the capability to ingest Vectra Detections, Audits and Entity Scoring data into Microsoft Sentinel through the Vectra REST API. Refer to the API documentation: `https://support.vectra.ai/s/article/KB-VS-1629` for more information.",
